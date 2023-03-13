@@ -4,12 +4,42 @@ export const Wrapper = styled.div`
 	display: grid;
 	gap: 5px;
 	padding: 5px;
-	@media (min-width: 992px) {
+
+	@media only screen and (min-width: 700px) and (max-width: 1400px) {
 		grid-template-columns: 1fr 1fr;
+		& div:nth-child(1) {
+			grid-column: span 2;
+		}
+		& div:nth-child(2) {
+			grid-row: span 2;
+		}
+		& div:nth-child(5) {
+			grid-column: span 2;
+		}
+		& div:nth-child(7) {
+			grid-row: span 3;
+		}
+		& div:nth-child(10) {
+			grid-column: span 2;
+		}
 	}
-	@media (min-width: 1400px) {
+
+	@media only screen and (min-width: 1400px) and (max-width: 1800px) {
 		grid-template-columns: 1fr 1fr 1fr;
+		& div:nth-child(1) {
+			grid-row: 1 / span 3;
+		}
+		& div:nth-child(2) {
+			grid-column: span 2;
+		}
+		& div:nth-child(5) {
+			grid-column: span 2;
+		}
+		& div:nth-child(10) {
+			grid-column: span 2;
+		}
 	}
+
 	@media (min-width: 1800px) {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		& div:nth-child(1) {
