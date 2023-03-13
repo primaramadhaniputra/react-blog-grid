@@ -1,5 +1,5 @@
 import React from "react"
-import Navbar from "../../organism/Navbar"
+// import Navbar from "../../organism/Navbar"
 import { Wrapper } from "./styled"
 
 interface IProps {
@@ -9,8 +9,8 @@ interface IProps {
 export default function NavbarLayout({ children }: IProps) {
   return (
     <Wrapper>
-      <Navbar />
-      {/* {children} */}
+      {/* <Navbar /> */}
+      {children}
     </Wrapper>
   )
 }
