@@ -84,18 +84,18 @@ export const Container = styled.div`
 		opacity: 0.9;
 	}
 
-	&:hover p:nth-child(1) {
+	&:hover p:nth-child(2) {
 		transition: all 0.3s;
 		opacity: 0.3;
 		transform: scale(1.01);
 	}
 
-	& p:nth-child(1) {
+	& p:nth-child(2) {
 		font-size: 18px;
 		font-weight: bold;
 		z-index: 2;
 	}
-	& p:nth-child(2) {
+	& p:nth-child(3) {
 		font-size: 12px;
 		z-index: 2;
 	}
