@@ -61,7 +61,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-	/* background-image: url("./image/mountain.jpg"); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -79,6 +78,18 @@ export const Container = styled.div`
 	flex-direction: column;
 	justify-content: end;
 	color: white;
+	transition: all 0.3s;
+
+	&:hover {
+		opacity: 0.9;
+	}
+
+	&:hover p:nth-child(1) {
+		transition: all 0.3s;
+		opacity: 0.3;
+		transform: scale(1.01);
+	}
+
 	& p:nth-child(1) {
 		font-size: 18px;
 		font-weight: bold;
