@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
 export const BlogTitle = styled.h1`
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 50px;
 	font-size: 30px;
 	text-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.063), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.07),
 		12.5px 12.5px 10px rgba(0, 0, 0, 0.07), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.066),
@@ -36,6 +36,12 @@ export const Article = styled.article`
 			padding-left: 5px;
 			font-weight: bold;
 		}
+	}
+	& img {
+		width: 100%;
+		border-radius: 50px;
+		max-height: 450px;
+		object-fit: cover;
 	}
 `;
 
